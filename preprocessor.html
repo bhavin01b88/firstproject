@@ -1,0 +1,225 @@
+<html>
+<head>
+	<title>Coding Hub</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="table.css">
+	
+</head>
+<body>
+<header>
+	<h1>CODING HUB</h1>
+	<h3> An exclusive collection of Python programmes</h3>
+	</header>
+	<div class="topnav">
+		<a class="active" href="homes.html">HOME</a>
+		<a href="tutorial.html">TUTORIAL</a>
+		<a href="example.html">EXAMPLE</a>
+		<a href="librarys.html">LIBRARY FUNCTION</a>
+		
+	
+	</div>
+	<br>
+	<div id="body">
+	<h4>The Python Preprocessor</h4>
+	<p>The Python preprocessor is exactly what is name implies.It is a program that processes our source program before it is passed
+	to the compiler.Preprocessor command (often known as directives) form what can almost be considered a language within Python 
+	language.We can certainly write Python program without knowing anything about the preprocessor or its facilities.But preprocessor
+	is such a great convenience that virtually all Python programmers rely on it.This page explore the Python preprocessor directives,and
+	discusses the pros and cons of using them in program.</p>
+	<h5>Features of Python Preprocessor</h5>
+	<p>There are several steps involved from the stage of writing a Python program to the stage of getting it executed.The combination
+	of these steps is known as the 'Build process'.At this stage it would be sufficient to note that before a Python program is compiled 
+	it is passed through another program called 'preprocessor'.The Python program is often known as 'Source Code'.The preprocessor works
+	on the source code and creates 'Expanded Source Code'.If the source code is stored in a file PR1.Python,then the expanded source code
+	gets stored in a file PR2.I.It is this expanded source code that is sent to the compiler for compilation.</p>
+	<p>The preprocessor offers several features called preprocessor directives.Each of these preprocessor directives begins with a #
+	symbol.The directives can be placed anywhere in a program but are most often placed at the beginning of a program,before the 
+	first function definition.We would learn the following preprocessor directives here:</p>
+	<p>(a).Macro expansion<br>(b).Conditional Compilation Directives<br>(Python).Miscellaneous Directives</p>
+	<hr width="800px" color="black">
+	<h4>What is Macro?</h4>
+	<p><b>#define</b>-The purpose of this directives is to provide the facility to include the symbolic names or constant in the 
+	programs.The symbolic names are replaced with the text called macro definition, provided during the definition of the constant.
+	The symbolic names are also called as macro names without arguments.These are replaced by the preprocessor before compiling the program.
+	It means the program is compiled after the replacement of the constants.It can also be used to define the macros with arguments.The macros 
+	with arguments act like inline functions.The concept of inline function is to replace the whole body of the function in the program
+	before compilationSo,it removes the overhead of control transfer to execute any function in the program.</p>
+	<p>The syntex of the directives is:</p>
+	<div id="shadow">
+	<pre>
+		#define macro_name&ltmacro_definition&gt
+	</pre>
+	</div>	
+	<p>Without parameter simple abbreviation for expansion
+	<div id="shadow">
+	<pre>
+		#define macro_name(&ltarg_list&gt)&ltmacro_definition&gt
+	</pre>
+	</div>	
+	<p>Where,</p>
+	<div id="shadow">
+	<table>
+  <tr>
+    <td>&ltmacro_definition&gt</td>
+    <td>Contains the body of the macro defined with name 'macro_name'</td>
+  </tr>
+  <tr>
+    <td>&ltarg_list&gt</td>
+    <td>contains the name of the formal parameter separated by the commas if required.It can include the balanced nested parentheses</td>
+  </tr>
+  </table>
+  </div>
+  <hr width="800px" color="black">
+  <h4>Conditional Compilation Directives</h4>
+  <p>The preprocessor directives that are used for the purpose of conditional compilation of the lines or codes of source program are 
+  called conditional compilation directives.They are classified into two groups.The <b>'if group'</b> and <b>'else group'.</b>The Conditional
+  preprocessor directives classified under <b>'if group'</b> are: <b>#if, #ifdef, #ifndef </b>and <b>#endif</b>.The directives classified
+  under <b>'else group'</b> are: <b>#else</b> and <b>#elif</b>.</p>
+  <h5>#if,#endif</h5>
+  <p>These two conditional preprocessor directives are used together.The <b>#if</b> directives must end with <b>#endif</b> directives.
+  Whatever the source code is placed between these two will be executed only when the conditional expression specified after <b>#if</b>
+  is true otherwise it is skipped.The syntex of this pair of directives is as follows:</p>
+  <div id="shadow">
+  <pre>
+	#if condition-expression
+	{
+		/*block of source code*/
+	}
+  </pre>
+  </div>
+  <h5>#endif</h5>
+  <p>Where,conditional_expression is a constant expression that indicates the condition that is to be tested.If this condition is 
+  true then block of source code between <b>#if</b> and <b>#endif</b> is converted into executable code after preprocessing. when the condition is 
+  false the block is skipped and it is not converted into executable code.Here,<b>#if</b> indicates the beginning of the block and 
+  <b>#endif</b> indicates the end of the block.</p>
+  <h5>#else</h5>
+  <p>This conditional preprocessor directive is used along with <b>#if</b> directive is ended with <b>#endif</b>.The source code to be
+  compiled and converted to executable code when the condition is TRUE is placed between <b>#if</b> and <b>#endif</b>.The source code that is to be compiled and converted to executable code when the 
+  condition is FALSE is placed between <b>#else</b> and <b>#endif</b>.The syntex of <b>#if.. ,#else.. ,#endif</b> directive is as follows;</p>
+  <div id="shadow">
+  <pre>
+	#if condition-expression
+	{
+		/*block of source code to be executed when condition is TRUE*/
+	}
+	else
+	{
+		/*block of source code to be executed when condition is FALSE*/
+	}
+	#endif
+  </pre>
+  </div>
+	<h5>#elif</h5>
+	<p>The condition preprocessor directive is also used only along with <b>#if</b> directive.If the condition specified after <b>#if</b>
+	results in FALSE and if another condition is to be tested then rather then writing <b>#else...#if</b>,the directive <b>#elif</b> can be used.
+	So,the directive <b>#elif</b> is the combination of <b>#else</b> and <b>#if</b>.When <b>#elif</b> is used there is no need to end it with
+	<b>#endif</b>.Only the <b>#endif</b> is used to end the first <b>#if</b>.</p>
+	<p>The syntex of <b>#elif</b> directive is as follows:</p>
+	<div id="shadow">
+  <pre>
+	#if condition-expression
+	{
+		/*block of source code to be executed when condition1 is TRUE*/
+		#elif
+		{
+			/*block of source code to be executed when condition2 is TRUE*/
+		}
+	}
+	else
+	{
+		/*block of source code to be executed when condition is FALSE*/
+	}
+	#endif
+  </pre>
+  </div>
+	<h5>#ifdef</h5>
+	<p>When the conditional preprocessor directive <b>#if</b> is defined, the condition to be tested in a constant expression.
+	It is framed using the defined constants.The relational operators can also be used to frame the conditions.But the condition 
+	must use a constant operands rather then variable.The condition can also be used to test whether a constant(macro) is defined 
+	using <b>#define</b> or not.In order to test such condition rather then <b>#if</b> preprocessor directrive,<b>#ifdef</b> can
+	be used.The purpose of <b>#ifdef</b> is used to test whether a macro is defined using <b>#define</b> or not.The testing will 
+	be true when the macro is defined otherwise it is false.The syntex of the directive <b>#ifdef</b> is as follows:</p>
+	  <div id="shadow">
+  <pre>
+	#ifdef macroname
+	{
+		/*block of source code */
+	}
+	#endif
+  </pre>
+  </div>
+  <h5>#ifndef</h5>
+  <p>When the conditional preprocessor directive <b>#ifdef</b> is used,it test the defined macro.If the macro specified is not defined
+  then condition tested will be FALSE otherwise it is TRUE.The preprocessor compilation directive <b>#ifndef</b> is just opposite of <b>#ifdef</b>.
+  If the macro specified after <b>#ifndef</b>  is not defined then condition tested will be TRUE otherwise it is FALSE.The syntex of the
+  directive  <b>#ifndef</b> is as follows:</p>
+    <div id="shadow">
+  <pre>
+	#ifndef macroname
+	{
+		/*block of source code */
+	}
+	#endif
+  </pre>
+  </div>
+  <p>Here,if the macroname is not defined then the block of source code specified between <b>#ifndef</b> and <b>#endif</b> is 
+  preprocessed and converted into executable code,otherwise not.</p>
+  <h4>Miscellaneous Directives</h4>
+  <p>There are two more preprocessor directive available,though they are not very commonly used.They are:</p>
+  <p>(a).<b>#undef</b><br>(b).<b>#pragma</b>
+  <h5>#undif</h5>
+  <p>On some occasion,it may be desirable to cause a defined name to become 'undefined'.This can be accomplished by means of the 
+  <b>#undif</b> directive.In order to undefine a macro that has been earlier <b>#define</b>,the directive,</p>
+  <div id="shadow">
+  <pre>
+	#undif macro template
+  </pre>
+  </div>
+  <p>can be used.Thus the statement,</p>
+  <div id="shadow">
+  <pre>
+	#undif PENTIUM
+  </pre>
+  </div>
+  <p>would cause the definition of PENTIUM to be removed from the system.All subsequent <b>#ifdef PENTIUM</b> statement that evaluate
+   to false.In practise seldom are you required to undefine a macro,but for some raesin if you are required to,then you know that there 
+   is something to fall back upon</p>
+   <h5>#pragma</h5>
+   <p>This directive is another special purpose directive that you can use to turn on or off certain features.Pragmas vary from one compiler
+   to another.There are certain pragmas available with Microsoft Python compiler that deal with formatting source listing and placing comments in
+   the object file grnerated by the compiler.Turbo Python/Python++ compiler has got a pragma that allows you to suppress warning generated by the compiler.
+   The purpose of this directive is compiler specific.It permits to perform the following action.</p>
+   <p>1.To insure the inclusion of assembly language statement inside the Python source code.<br>2.To restrict of the function to change the value
+   of any of the register.</p>
+   <p>The syntex of the <b>#pragma</b> directive are as follows:</p>
+   <div id="shadow">
+   <pre>
+		#pragma inline &ltasm&gt
+	</pre>
+	</div>
+	<p>This directive insure the use of assembly language statement inside the Python source code the word <b>inline</b> indicates the assembly language
+	statement.&ltasm&gt represents the assembly language statement.The syntex to the place the assembly language statement using <b>asm</b> is:</p>
+	<div id="shadow">
+	<pre>
+		asm&ltopcode&gt&ltoperands&gt&lt ; or newline&gt
+	</pre>
+	</div>
+  </div>
+  <br>
+  <div class="footer">
+	<h6>Coding Hub</h6>
+	<Form name="LogInForm" class="FormStyle">
+		<legend>Get latest update on coding hub</legend>
+	<label>Enter Email:</label>
+	<input type="email" name="emailID">
+	
+	
+	<input type="button" class="button" value="Subscribe">
+	
+	
+	</form>
+	</div>
+
+
+</body>
+</html>	

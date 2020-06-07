@@ -1,0 +1,87 @@
+<html>
+<head>
+	<title>Coding Hub</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="table.css">
+	
+</head>
+<body>
+<header>
+	<h1>CODING HUB</h1>
+	<h3> An exclusive collection of Python Programmes</h3>
+	</header>
+	<div class="topnav">
+		<a class="active" href="homes.html">HOME</a>
+		<a href="tutorial.html">TUTORIAL</a>
+		<a href="example.html">EXAMPLE</a>
+		<a href="librarys.html">LIBRARY FUNCTION</a>
+		
+	
+	</div>
+	<br>
+	<div id="body">
+	<h4>Python Program to Find the Largest Among Three Numbers</h4>
+	<p>In this program, you'll learn to find the largest among three numbers using if else and display it.</p>
+	<p>In the program below, the three numbers are stored in num1, num2 and num3 respectively. We've used the if...elif...else ladder to find the largest among the three and display it.</p>
+	<h5>Source Code</h5>
+	<div id="box">
+	<pre>
+	# Python program to find the largest number among the three input numbers
+
+	num1 = 10
+	num2 = 14
+	num3 = 12
+
+	# uncomment following lines to take three numbers from user
+	#num1 = float(input("Enter first number: "))
+	#num2 = float(input("Enter second number: "))
+	#num3 = float(input("Enter third number: "))
+
+	if (num1 >= num2) and (num1 >= num3):
+		largest = num1
+	elif (num2 >= num1) and (num2 >= num3):
+		largest = num2
+	else:
+		largest = num3
+
+		print("The largest number between",num1,",",num2,"and",num3,"is",largest)
+	</pre>
+	</div>
+	<p>Output</p>
+	<div id="box">
+	<pre>
+	The largest number between 10, 14 and 12 is 14.0
+	</pre>
+	</div>
+	<hr width="800px" color="gray">
+	<br>
+	<br>
+	<div id="box">
+	<h5>Related Programs</h5>
+	<ul>
+		<li><a href="e13.html">Python Program to Check Whether a Number is Palindrome or Not</a></li>
+		<li><a href="e9.html">Python program to Calculate the Sum of Number</a></li>
+		<li><a href="e10.html">Python program to Reverse a Number</a></li>
+		<li><a href="e14.html">Python Program to Check Whether a Number is Prime or Not</a></li>
+		<li><a href="e11.html">Python Program to Display Fibonacci Sequence</a></li>
+	</ul>
+	</div>
+	</div>
+	<br>
+	<div class="footer">
+	<h6>Coding Hub</h6>
+	<Form name="LogInForm" class="FormStyle">
+		<legend>Get latest update on coding hub</legend>
+	<label>Enter Email:</label>
+	<input type="email" name="emailID">
+	
+	
+	<input type="button" class="button" value="Subscribe">
+	
+	
+	</form>
+	</div>
+
+
+</body>
+</html>	

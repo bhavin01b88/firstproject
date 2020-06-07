@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Coding Hub</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+
+.header {
+  padding: 5px;
+  text-align:center;
+  background:#ddd;
+}
+
+.header h1 {
+  font-size: 40px;
+  font-family:"comic sans ms";
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:"comic sans ms";
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  text-decoration:none;
+  color:black;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+  
+	p{text-align:justify;}
+	
+	
+	
+	
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>CODING HUB</h1>
+</div>
+
+<div class="topnav">
+  <a href="#">HOME</a>
+  <a href="homes.html">PYTHON</a>
+  <a href="#">C</a>
+  <a href="#">C++</a>
+  <a href="#">PHP</a>
+  <a href="#">JAVA</a>
+  
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+  <div class="card">
+	  <h2><a href="homes.html">PHYTHON</a></h2>
+	  <img src="python.jpg" width="75%">
+	  <p>Python is a multiparadigm, general-purpose, interpreted, high-level programming language. Python allows programmers to use different programming styles to create simple or complex programs, get quicker results and write code almost as if speaking in a human language.
+		Some of the popular systems and applications that have employed Python during development include Google Search, YouTube, BitTorrent, Google App Engine, Eve Online, Maya and iRobot machines.</p>
+	  <p>Python’s initial development was spearheaded by Guido van Rossum in the late 1980s. Today, it is developed by the Python Software Foundation.
+		Because Python is a multiparadigm language, Python programmers can accomplish their tasks using different styles of programming: object oriented, imperative, functional or reflective. Python can be used in Web development, numeric programming, game development, serial port access and more.</p>
+		<p>There are two attributes that make development time in Python faster than in other programming languages:</p>
+		<p>1.Python is an interpreted language, which precludes the need to compile code before executing a program because Python does the compilation in the background. Because Python is a high-level programming language, it abstracts many sophisticated details from the programming code.
+		Python focuses so much on this abstraction that its code can be understood by most novice programmers.</p>
+		<p>2.Python code tends to be shorter than comparable codes. Although Python offers fast development times, it lags slightly in terms of execution time. Compared to fully compiling languages like C and C++, Python programs execute slower. Of course, with the processing speeds of computers these days,
+		the speed differences are usually only observed in benchmarking tests, not in real-world operations. In most cases, Python is already included in Linux distributions and Mac OS X machines.</p>
+  </div>
+	
+    <div class="card">
+      <h2>C Language</h2>
+      <img src="clang.jpg" width="75%">
+      <p>C is a high-level and general-purpose programming language that is ideal for developing firmware or portable applications.
+	  Originally intended for writing system software, C was developed at Bell Labs by Dennis Ritchie for the Unix Operating System in the early 1970s.
+      Ranked among the most widely used languages, C has a compiler for most computer systems and has influenced many popular languages – notably C++.</p>
+	  <p>C belongs to the structured, procedural paradigms of languages. It is proven, flexible and powerful and may be used for a variety of different applications.
+	  Although high level, C and assembly language share many of the same attributes.</p>
+      
+    </div>
+    <div class="card">
+      <h2>C++</h2>
+      <img src="cpp.png" width="75%">
+      <p>C++ is a general-purpose object-oriented programming (OOP) language, developed by Bjarne Stroustrup, and is an extension of the C language. It is therefore possible to code C++ in a "C style" or "object-oriented style." 
+	  In certain scenarios, it can be coded in either way and is thus an effective example of a hybrid language.</p>
+      <p>C++ is considered to be an intermediate-level language, as it encapsulates both high- and low-level language features. Initially, the language was called "C with classes" as it had all the properties of the C language with an additional concept of "classes."
+	  However, it was renamed C++ in 1983.</p>
+    </div>
+   <div class="card">
+      <h2>PHP</h2>
+      <img src="php2.jpg" width="75%">
+      <p>PHP is a recursive acronym for PHP: Hypertext Preprocessor, a scripting language used to create dynamic and interactive HTML Web pages. A server processes PHP commands when a website visitor opens a page, then sends results to the visitor’s browser.</p>
+      <p>PHP is very easy for beginners and also offers many advanced features for professional programmers. PHP runs most efficiently on an Apache server, but it can also run on IIS.
+	  PHP is an open-source and cross-platform language. It can be built as an Apache module or a CGI script. As an Apache module, PHP is very fast and lightweight, allowing for quick turnaround.</p>
+    </div>
+   <div class="card">
+	  <h2>JAVA</h2>
+	  <img src="java1.png" width="75%">
+	  <p>Java is a general purpose, high-level programming language developed by Sun Microsystems. The Java programming language was developed by a small team of engineers, known as the Green Team, who initiated the language in 1991.</p>
+	  <p>Originally called OAK, the Java language was designed for handheld devices and set-top boxes. Oak was unsuccessful and in 1995 Sun changed the name to Java and modified the language to take advantage of the burgeoning World Wide Web.</p>
+		<p>Later, in 2009, Oracle Corporation acquired Sun Microsystems and took ownership of two key Sun software assets: Java and Solaris.</p>
+  </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Us</h2>
+      <img src="prog.png" width="100%">
+      <p>We are BCA students and we made this website as part of our project. On this site one can find useful information about some programming languages along with some programs. </p>
+    </div>
+    <div class="card">
+      <h2>Get In Touch</h2>
+	  <a href="https://www.facebook.com/bhavinbhatewera" target="blank">
+      <img src="fbb.png" width="14%" ></a>
+	  <a href="https://www.twitter.com/bhavin01b" target="blank">
+      <img src="twit.png" width="14%" ></a>
+	  <a href="https://www.instagram.com/ll__bhavin_bhatewera__ll" target="blank">
+      <img src="ins.png" width="14%" ></a>
+    
+    </div>
+  </div>
+</div>
+	<div class="footer">
+	<h4>CODING HUB</h4>
+	<Form name="LogInForm" class="FormStyle">
+		<legend>Get latest update on coding hub</legend>
+	<label>Enter Email:</label>
+	<input type="email" name="emailID">
+	<input type="button" class="button" value="Subscribe">
+	
+	</form>
+	</div>
+</body>
+</html>

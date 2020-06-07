@@ -1,0 +1,102 @@
+<html>
+<head>
+	<title>Coding Hub</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="table.css">
+	
+</head>
+<body>
+<header>
+	<h1>CODING HUB</h1>
+	<h3> An exclusive collection of Python Programmes</h3>
+	</header>
+	<div class="topnav">
+		<a class="active" href="homes.html">HOME</a>
+		<a href="tutorial.html">TUTORIAL</a>
+		<a href="example.html">EXAMPLE</a>
+		<a href="librarys.html">LIBRARY FUNCTION</a>
+		
+	
+	</div>
+	<br>
+	<div id="body">
+	<h4>Python Program to Display Fibonacci Sequence</h4>
+	<p>Example on how to display the Fibonacci sequence of first n number (entered by the user) using loop.Also in different example,you
+	learn to generate the Fibonacci sequence up to a certain number</p>
+	<p>The Fibonacci sequence is a series  where the next term is the sum of previous two terms.The first two term of the Fibonacci sequence
+	is 0 followed by 1.</p>
+	<div id="shadow">
+	<pre>
+	The Fibonic sequence: 0,1,1,2,3,5,
+	</pre>
+	</div>
+	<p>Visit this page to learn Fibonic sequence.</p>
+	<p>Example.Generate Fibonacci Series 0 to n?</p>
+	<h5>Source Code</h5>
+	<div id="box">
+	<pre>
+	# Program to display the Fibonacci sequence up to n-th term where n is provided by the user
+
+	nterms = 10
+	#nterms = int(input("How many terms? "))
+
+	# first two terms
+	n1 = 0
+	n2 = 1
+	count = 0
+
+	# check if the number of terms is valid
+	if nterms <= 0:
+		print("Please enter a positive integer")
+	elif nterms == 1:
+		print("Fibonacci sequence upto",nterms,":")
+		print(n1)
+	else:
+		print("Fibonacci sequence upto",nterms,":")
+	while count < nterms:
+		print(n1,end=' , ')
+		nth = n1 + n2
+		# update values
+		n1 = n2
+		n2 = nth
+		count += 1
+	</pre>
+	</div>
+	<p>Output</p>
+	<div id="box">
+	<pre>
+	0, 1, 1, 2, 3, 5, 8, 13, 21, 34,
+	</pre>
+	</div>
+	<hr width="800px" color="gray">
+	<br>
+	<br>
+	<div id="box">
+	<h5>Related Programs</h5>
+	<ul>
+		<li><a href="e8.html">Python program to Find Factorial of a Number</a></li>
+		<li><a href="e9.html">Python program to Calculate the Sum of Number</a></li>
+		<li><a href="e4.html">Python Program to Find the Largest Number Among Three Numbers</a></li>
+		<li><a href="add.html">Python Program to Add Two Numbers</a></li>
+	</ul>
+	</div>
+	</div>
+	<br>
+	<div class="footer">
+	<h4>Coding Hub</h4>
+	<Form name="LogInForm" class="FormStyle">
+		<legend>Get latest update on coding hub</legend>
+	<label>Enter Email:</label>
+	<input type="email" name="emailID">
+	
+	
+	<input type="button" class="button" value="Subscribe">
+	
+	
+	</form>
+	</div>
+
+
+</body>
+</html>	
+	

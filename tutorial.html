@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coding Hub</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<header>
+	<h1>CODING HUB</h1>
+	<h3> An exclusive collection of Python programmes</h3>
+	</header>
+	<div class="topnav">
+		<a class="active" href="homes.html">HOME</a>
+		<a href="tutorial.html">TUTORIAL</a>
+		<a href="example.html">EXAMPLE</a>
+		<a href="librarys.html">LIBRARY FUNCTION</a>
+	
+	</div>
+	<br>
+	<div id="body">
+	<h2>PYTHON TUTORIAL</h2>
+	<p> Python is an open source programming language that was made to be easy-to-read and powerful. A Dutch programmer named Guido van Rossum made Python in 1991. He named it after the television show Monty Python's Flying Circus. 
+	Many Python examples and tutorials include jokes from the show.<br><br>
+	Python is an interpreted language. Interpreted languages do not need to be compiled to run. A program called an interpreter runs Python code on almost any kind of computer.
+	This means that a programmer can change the code and quickly see the results. This also means Python is slower than a compiled language like C, because it is not running machine code directly.<br><br> 
+	Python is a good programming language for beginners. It is a high-level language, which means a programmer can focus on what to do instead of how to do it. Writing programs in Python takes less time than in some other languages.<br><br>
+	Python drew inspiration from other programming languages like C, C++, Java, Perl, and Lisp. </p>
+	<hr width="800px" color="gray">
+	<h4>Decision Control Statement</h4>
+	<p>Python language too must be able to perform different sets of action depending on the circumstances.Python has three major decision making instruction-the if statement, the if-else statement,and the switch statement.A fourth,somewhat less important structure is the one that uses conditional operators.</p>
+	<h5>The if-else statement</h5>
+	<p> Decision making is required when we want to execute a code only if a certain condition is satisfied.<br><br>
+	The if…elif…else statement is used in Python for decision making. </p>
+	<p>SYNTEX</p>
+	<div id="shadow">
+	<pre>
+	if test expression:     
+	statement(s) 
+	</pre>
+	</div>
+	<p>Here, the program evaluates the test expression and will execute statement(s) only if the text expression is True.<br><br>
+	If the text expression is False, the statement(s) is not executed.<br><br>
+	In Python, the body of the if statement is indicated by the indentation. Body starts with an indentation and the first unindented line marks the end.<br><br>
+	Python interprets non-zero values as True. None and 0 are interpreted as False.</p>
+	<p>EX.</p>
+	<div id="shadow">
+	<pre>
+	# If the number is positive, we print an appropriate message 
+	num = 3 
+	if num > 0:     
+		print(num, "is a positive number.") 
+	print("This is always printed.") 
+	num = -1 
+	if num > 0:     
+		print(num, "is a positive number.") 
+	print("This is also always printed.") 
+	</pre>
+	</div>
+	<p>When you run the program, the output will be: </p>
+	<div id="shadow">
+	<pre>
+	3 is a positive number 
+	This is always printed 
+	This is also always printed
+	</pre>
+	</div>
+	<p>In the above example, num > 0 is the test expression.<br> The body of if is executed only if this evaluates to True.</p>
+	<p>When variable num is equal to 3, test expression is true and body inside body of if is executed.<br><br>
+	If variable num is equal to -1, test expression is false and body inside body of if is skipped.<br><br>
+	The print() statement falls outside of the if block (unindented). Hence, it is executed regardless of the test expression.</p>
+	<hr width="800px" color="gray">
+	<h5>Python if...else Statement</h5>
+	<p>Syntax of if...else </p>
+	<div id="shadow">
+	<pre>
+	if test expression:     
+		Body of if 
+	else:     
+		Body of else 
+	</pre>
+	</div>
+	<p>The if..else statement evaluates test expression and will execute body of if only when test condition is True.<br><br>
+	If the condition is False, body of else is executed. Indentation is used to separate the blocks.</p>
+	<p>Example of if...else </p>
+	<div id="shadow">
+	<pre>
+	# Program checks if the number is positive or negative 
+	# And displays an appropriate message 
+	num = 3 
+	# Try these two variations as well.  
+	# num = -5 
+	# num = 0 
+	if num >= 0:     
+		print("Positive or Zero") 
+	else: 
+		  print("Negative number") 
+	</pre>
+	</div>
+	<p>In the above example, when num is equal to 3, the test expression is true and body of if is executed and body of else is skipped.<br><br>
+	If num is equal to -5, the test expression is false and body of else is executed and body of if is skipped.<br><br>
+	If num is equal to 0, the test expression is true and body of if is executed and body of else is skipped.</p>
+	<hr width="800px" color="gray">
+	<h5>Python if...elif...else Statement </h5>
+	<p>Syntax of if...elif...else </p>
+	<div id="shadow">
+	<pre>
+	if test expression:     
+		Body of if 
+	elif test expression:     
+		Body of elif 
+	else:      
+		Body of else 
+	</pre>
+	</div>
+	<p>The elif is short for else if. It allows us to check for multiple expressions. If the condition for if is False, 
+	it checks the condition of the next elif block and so on.<br><br>
+	If all the conditions are False, body of else is executed.<br><br>
+	Only one block among the several if...elif...else blocks is executed according to the condition.<br><br>
+	The if block can have only one else block. But it can have multiple elif blocks.</p>
+	<p>Example of if...elif...else</p>
+	<div id="shadow">
+	<pre>
+	# In this program,  
+	# we check if the number is positive or 
+	# negative or zero and  
+	# display an appropriate message 
+ 
+	num = 3.4 
+	# Try these two variations as well: 
+	# num = 0 
+	# num = -4.5 
+	if num > 0:     
+		print("Positive number") 
+	elif num == 0:     
+		print("Zero") 
+	else:     
+		print("Negative number") 
+	</pre>
+	</div>
+	<p>When variable num is positive, Positive number is printed.<br> If num is equal to 0, Zero is printed.<br> If num is negative, Negative number is printed </p>
+	<hr width="800px" color="gray">
+	<h5>Python Nested if statements </h5>
+	<p>We can have a if...elif...else statement inside another if...elif...else statement. This is called nesting in computer programming.<br><br>
+	Any number of these statements can be nested inside one another. Indentation is the only way to figure out the level of nesting. This can get confusing, so must be avoided if we can.</p>
+	
+	<p>Python Nested if Example</P>
+	<div id="shadow">
+	<pre>
+	# In this program, we input a number 
+	# check if the number is positive or 
+	# negative or zero and display 
+	# an appropriate message 
+	# This time we use nested 
+	if num = float(input("Enter a number: ")) 
+	if num >= 0:     
+		if num == 0:         
+			print("Zero")     
+		else:         
+			print("Positive number") 
+	else:     
+	print("Negative number") 
+	</pre>
+	</div>
+	<p>Output 1 </p>
+	<div id="shadow">
+	<pre>
+	Enter a number: 5 
+	Positive number 
+	</pre>
+	</div>
+	<p>Output 2</p>
+	<div id="shadow">
+	<pre>
+	Enter a number: -1 
+	Negative number 
+	</pre>
+	</div>
+	<p>Output 3</p>
+	<div id="shadow">
+	<pre>
+	Enter a number: 0 
+	Zero 
+	</pre>
+	</div>
+	<p>Check out these examples to learn more:<br> Python Program to Check if a Number is Positive, Negative or 0<br> 
+	Python Program to Check if a Number is Odd or Even<br> Python Program to Check Leap Year<br> Python Program to read two numbers and find the biggest<br>
+	Python Program to read three numbers and find the biggest<br> Python Program to read PCM Marks and find the Grade of Student </p>
+	<hr width="800px" color="gray">
+	<h4>Switch Case Statement</h4>
+	<p>Python provides a multiple-branch selection statement known as switch case statement.This selection statement successively tests the value of an expression against a list of integer or character value.
+	When a match is found,the statement associated with the value are executed.</p>
+	<p>SYNTEX</p>
+	<div id="shadow">
+	<pre>
+		switch(expression)
+		{
+			case statement1:
+				        set_of_statement 1;
+					break;
+			case statement1:
+			                set_of_statement 1;
+					break;
+			case statement1:
+				        set_of_statement 1;
+					break;
+			.
+			.
+			.
+			.
+			
+			case constant n:
+				        set_of_statement n-1;
+	            			break;
+			default:
+					set_of_statement n
+		}
+	</pre>
+	</div>
+	<p>The expression is evaluated and its values are matched against the value of the constants specified in the case statement.
+	When a match is found,the statement sequence associated with that case is executed until the break statement or the end of SWITCH statement is reached.
+	The DEFAULT statement gets executed when no match is found.The DEFAULT statement is optional and.if it is missing,no action takes placeif all matches fail.
+	An important thing to note about the switch statement is thet the case values can only be constant integral expression or a character constant</p>
+	<hr width="800px" color="black">
+	<h4>Looping Control Statement</h4>
+	<p>The Programs that we have developed so far used either a sequential or a decision control instruction.
+	In the first one,the calculations were carried out in a fixed order;while in the second,an appropriate set of instruction were executed depending upon the outcome of the condition(s) being tested.<br><br>
+	The versatility of the computer lies in its ability to perform a set of instruction repeatedly.This involves repeating some portion of the program either a specified number of times or until a
+	particular condition is being satisfied.This repetitive operation is done through a loop control instruction.<br><br>
+	There are three methods by way of which we can repeat a part of a program.They are:</p>
+	<ul> 
+	<li>Using a for statement.
+	<li>Using a while statement.
+	<li>Using a do-while statement.
+	</ul>
+	<h5>The For Loop</h5>
+	<p> The for loop in Python is used to iterate over a sequence (list, tuple, string) or other iterable objects. Iterating over a sequence is called traversal.<br><br>
+	Syntax of for Loop</p>
+	<div id="shadow">
+	<pre>
+	for val in sequence:  
+		Body of for 
+	</pre>
+	</div>
+	<p>Here, val is the variable that takes the value of the item inside the sequence on each iteration.<br><br>
+	Loop continues until we reach the last item in the sequence. The body of for loop is separated from the rest of the code using indentation.</p>
+	<h5>The range() function</h5>
+	<p>We can generate a sequence of numbers using range() function. range(10) will generate numbers from 0 to 9 (10 numbers).<br><br>
+	We can also define the start, stop and step size as range(start,stop,step size). step size defaults to 1 if not provided.<br><br>
+	This function does not store all the values in memory, it would be inefficient. So it remembers the start, stop, step size and generates the next number on the go.<br><br>
+	To force this function to output all the items, we can use the function list().<br> The following example will clarify this.</p> 
+	<div id="shadow">
+	<pre>
+	# Output: range(0, 10) 
+	print(range(10)) 
+ 
+	# Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] 
+	</pre>
+	</div>
+	<p>for loop with else<br> A for loop can have an optional else block as well. The else part is executed if the items in the sequence used in for loop exhausts.<br> 
+	break statement can be used to stop a for loop. In such case, the else part is ignored.<br><br>
+	Hence, a for loop's else part runs if no break occurs.<br> Python Program to Calculate Factorial.<br> Python Program to Calculate r=x^y<br> 
+	Python Program to Fid the sum of bellow series<br> S=1+3+5+……+N </p>
+	<hr width="800px" color="gray">
+	<h5>The While Loop</h5>
+	<p>The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true.<br><br>
+	We generally use this loop when we don't know beforehand, the number of times to iterate.<br><br>
+	Syntax of while Loop in Python</p>
+	<div id="shadow">
+	<pre>
+	while test_expression:     
+		Body of while 
+	</pre>
+	</div>
+	<p>In while loop, test expression is checked first. The body of the loop is entered only if the test_expression evaluates to True. After one iteration, 
+	the test expression is checked again. This process continues until the test_expression evaluates to False.<br><br>
+	In Python, the body of the while loop is determined through indentation. 
+	Body starts with indentation and the first unindented line marks the end.<br><br>
+	Python interprets any non-zero value as True. None and 0 are interpreted as False.</p>
+	<h5>while loop with else</h5>
+	<p>Same as that of for loop, we can have an optional else block with while loop as well.<br><br>
+	The else part is executed if the condition in the while loop evaluates to False. The while loop can be terminated with a break statement. In such case, the else part is ignored.
+	Hence, a while loop's else part runs if no break occurs and the condition is false.</p>
+	<p>Check out these examples to learn more:</p>
+	<ul>
+	<li>Python Program to Print the Fibonacci sequence 
+	<li>Python Program to Check Armstrong Number <li>
+	Python Program to Find Armstrong Number in an Interval 
+	</ul>
+	<hr width="800px" color="gray">
+	<h5>The Do-While Loop</h5>
+	<p>Unlike the For and While loops,the do while loop is an exit controlled loop.It evaluates its test-expression at the bottom of the loop after executing its loop-body statements.This means thst a do-while loop always executes at least once.The syntex of the do while loop is</p>
+	<div id="shadow">
+	<pre>
+		do
+		{
+			statements
+		}whlie(test-expression):
+	</pre>
+	</div>
+	<br>
+	<hr width="800px" color="black">
+	<h4>What are ARRAY'S</h4>
+	<p>An array is a group of related data items that share a common name.Array element are organized as a sequence of data in memory,
+	where in all data are of same type,and are placed in physically adjacent location.<br><br>
+	To see the usefulness of arrays,suppose we wish to arrange the percentage marks obtained by 100 students in ascending order.
+	In this case we have two option to store these marks in memory-<br><br>
+	Construct 100 variable to store percentage marks obtained by 100 different students<br>
+	Construct one variable (called array) capable of storing or holding all the hundred values.<br>
+	Obviously the second one is better</p>
+	<h5>Declaration Of Array</h5>
+	<p>Arrays must be declared before they are used.the general form of array declaration is type variable-name[size]<br><br>
+	DECLARE</p>
+	<div id="shadow">
+	<pre>
+		datatype    identifier
+		int         age[10]
+		
+	</pre>
+	</div>
+	<p>INITIALIZE</p>
+	<div id="shadow">
+	<pre>
+		Identifier[index]=Cell
+		age[2]=4
+	</pre>
+	</div>
+	<p>TRAVERSAL</p>
+	<div id="shadow">
+	<pre>
+		for(i=0;i&ltsize;i++)
+		{
+			identifier[i];
+		}
+	</pre>
+	</div>
+	<h5>One dimensional array</h5>
+	<p>A list of item can be given one variable name using only one subscript and such a variable is called a one dimensional array
+	or a single subscripted variable.In Python,the general notation will be- x[i]<br><br>
+	Where i can take a value 0,1,2,3 or 4 depending on the position of the element being reffered.Here X is the subscripted variable(array),where as i its is subscript.<br><br>
+	For example,if we declare the array <br><br>
+	int age[5];<br><br>
+	this statement state that age is an arrat of 5 integers and reserve enough memory for age to hold 5 integers.
+	Once the declaration is made,age[0] refers to the first integers in the array,age[1] refers to the second integer and so on finally,
+    age[4] refers to the last integer in tha array.In Python,array indices always being with zero.</p>
+	<h5>Initialization of arrays</h5>
+	<p>We can initialize the element of arrays in the same way as the ordinary variable when they are declared.<br><br>
+	For Example</p>
+	<div id="shadow">
+	<pre>
+		int num[5]={1,2,3,4,5};
+		         OR
+		int num[]={1,2,3,4,5};
+		We can also enter the values in the array from the keyboard as
+		for(i=0;i<5;i++)
+		{
+			print("\n Enter a value");
+			print("%d",&num[i]);
+		}
+	</pre>
+	</div>
+	<h5>Accessing Array Elements</h5>
+	<p>Once an array is declared and initialized, to access a particular element in an array,specify the array name,followed by square braces enclosing an integer,which is called the arrayindex.<br><br>
+	For example</p>
+	<div id="shadow">
+	<pre>
+		for(i=0;i<5;i++)
+		{
+			sum=sum+num[i];
+		}
+		avg=sum/5;
+		print("\n average marks=%d",avg);
+	</pre>
+	</div>
+	<h5>Two dimensional array</h5>
+	<p>Often,there is need to store and manipulate two-dimensional data structures such as matrices and tables.
+	Here.the arrayhas two subscripts.One subscripts denotes the row,and the other,the column,All subscripts row and column starts with 0<br><br>
+	The declaration of two dimensional array is as follows-int a[5][5];
+	Here,a is declared as a matrix having 5 rows(0-4) and columns(0-5).The first element in the matrix is a[0][0] and the last element is a[4][4].</p>
+	<h5>Initializing a Two-dimensional Array</h5>
+	<p>A two dimensional can be initialized as-</p>
+	<div id="shadow">
+	<pre>
+		int stud[4][2]={{12,5};{16,4}{14,8};{11,7};};
+		               OR
+		int stud[4][2]={12,5,16,4,14,8,11,7};
+		
+	</pre>
+	</div>
+	<p>It is important to note that while initializing to an arrayit is necessary to mention the second(column) dimension,where as the first dimension(row) is optional.Thus the declarations.</p>
+	<div id="shadow">
+	<pre>
+		int a[2][3]={1,2,3,4,5,6};
+		int a[][3]={1,2,3,4,5,6};
+		are perfectly valid.
+	</pre>
+	</div>
+	<h5>Accessing Two-dimensional Array Elements</h5>
+	<p>The element of a two dimensional array can be accessed by the following expression-<br><br>
+	Where i refers to the row and j,the column number.</p>
+	<div id="shadow">
+	<pre>
+		
+			int a[2][3]={1,2,3,4,5,6};
+			int i,j;
+			for(i=0;i<2;i++)
+			{
+				print("%d\t",a[i]);
+			}
+			print("\n");
+		
+	</pre>
+	</div>
+	<br>
+	<hr width="800px" color="black">
+	<h4>What is Function?</h4>
+	<p>A function is a self contained block of code that perform a particular task.Once a function has been designed and packed,it can be treated as a black box
+	that takes some data from the main program and returns a value.The inner details of operations are invisible to the rest of the program.<br><br>
+	A Python,program is a collection of function.Python function can be classified into two categories library function and user defined function.
+	Main is an example of user defined function.printf() and scanf() belong to the category of library function.The main difference between two
+	categories that library function are not required to be written by user whereas a user defined function has to be developed by the user at the time of writing of a program.<br><br>
+	In Python,every program must have a main function to indicate a beginning of its execution.A program can be divided into functional parts,and 
+	then each part may be independently coded and combined into a single unit.The subprogram are called functions or user defined functions.<br><br>
+	The form of a general Python function is-</p>
+	<div id="shadow">
+	<pre>
+		function-type-function-name(parameter list)
+		{
+			local variable declarations;
+			executable statement1;
+			executable statement2;
+			.......
+			.......
+			return(statement);
+		}
+	</pre>
+	</div>
+	<h5>Why Use Function?</h5>
+	<p>There are two reasons-<br><br>
+	1.Writing function avoid rewriting the same code over and over.<br>
+	2.Using function it becomes easier to write programs and keep track of what they are doing.</p>
+	<div id="shadow">
+	<pre>
+		EX.
+			printline()
+			{
+				int i;
+				for(i=1;i&lt=25;i++)
+				print("__");
+				print("\n");
+			}
+	</pre>
+	</div>
+	<p>This block of statement defines a function called printline which can print a line of 25 character length.<br><br>
+	This function can be used in a program as follows-</p>
+	<div id="shadow">
+	<pre>
+		main()
+		{
+			printline();
+			print("user defined function\n);
+			printline();
+			
+			print("\n");
+			
+		}
+	</pre>
+	</div>
+	<p>Output would be:</p>
+	<div id="shadow">
+	<pre>
+		user-defined function
+	</pre>
+	</div>
+	<p>This program contains two user defined function-main() and printline().The program execution starts with the mainfunction.
+	During execution of main,the first statement encountered is printline().</p>
+	
+	<h5>What are the Argument's?</h5>
+	<p>A calling function can send a "package" of values for the called function to operate on,or to control how the function is to operate.
+	Each value is passed in the manner is called a parameter or arguments<br><br>
+	For example</p>
+	<div id="shadow">	
+	<pre>
+	y=sqrt(144.0);
+	</pre>
+	</div>
+	<p>Here,the value 144.0 is the argument or parameter passed to the function.It represents the value for which the function is to find a square root.<br><br>
+	When a function is called,the argument specified within the parentheses of the calling statement is known as an actual parameter
+	or argument,because it is the value that is actually transmitted to the function.This is in contrast with what is called the dummy
+	or formal parameter or argument,which is the name of the corresponding argument in the called function.<br><br>
+	
+	Here in this program the variables n,p are called the actual argument whereas the variable x,y are called formal argument.</p>
+	<hr width="800px" color="black">
+	<h4>RECURSION</h4>
+	<p>In Python,it is possible for the function to call themselves.A function is called 'recursive' if a statement within the body of the function calls the same function.
+	Sometimes called 'circular definition',recursion is thus the process of defining something in terms of itself.<br><br>
+	Let us now see a simple example of recursion,Suppose we want to calculate the factorial value of an integer.As we know,the factorial of a number
+	is the product of all the integers between 1 and that number.For example,4 factorial is 4*3*2*1.This can also be expressed as4!=4*3!where'!'
+	stands for factorial.Thus factorial of a number can be expressed in the form of itself.Hence this can be programmed using recursion.
+	However,before we try to write a recursive function for calculating factorial let us take a look at the non-recursive funcyion for calculating the factorial value of an integer.</p>
+	
+	<hr width="800px" color="black">
+	<h4>POINTERS</h4>
+	<p>A pointer is a variable that contains the address of a variable.We know variables are stored in memory.Computers memory is a sequential collection of storage cells.
+	Each cell known as a byte has a number called address associated with it.Typically the address are numbered consecutively starting from zero.
+	The last address depende on the memory size.<br><br>
+	There are many reasons of using pointers-<br><br>
+	1.A pointers enables us to access a variable that is defined outside the function.<br>
+	2.Pointers are more efficient in handling data tables.<br>
+	3.Pointers reduce the length and complexity of program.<br>
+	4.They increase the execution speed.<br>
+	5.The use of a pointer array to character string result in saving of data storage space in memory.<br><br>
+	When we declare a variable,the system allocates,somewhere in the memory,an appropriate location to hold the value of the variable.
+	Since,every byte has a unique address number:this location 	will have its own address number.<br><br>
+	In Python,every variable must be declared for its type.Since pointer variable contain addresses thet belong to separate data type,
+	they must be declared as pointer before we use them.<br><br>
+	The declaration of a pointer variable takes the following form-<br>datatype *pt_name<br><br>
+	This tells the compiler three things about the variable pt name.<br><br>
+	A).The asterisk(*)tells that the variables pt_name is the pointer variable.<br>
+	B).pt_name needs a memory location.<br>
+	C).pt_name points to a variable of type datatype.</p>
+	<p>For Example.</p>
+	<div id="shadow">
+	<pre>
+		int *p;            /*holds address of an integer variable*/
+		float *x           /*holde address of an float variable*/
+	</pre>
+	</div>
+	<p>We can print the address number through the following program:</p>
+	<div id="shadow">
+	<pre>
+			int i=3;
+			print("Address of i=%u\n,&i);
+			print("value of i=%d\n",i);
+			return(0);
+		
+	</pre>
+	</div>
+	<p>The output of the program would be:</p>
+	<div id="shadow">
+	<pre>
+		Address of i=65524
+		value of i=3
+	</pre>
+	</div>
+	<br>
+	<hr width="800px" color="black">
+	<h4>What are Strings?</h4>
+	<p>The way a group of integers can be stored in an integer array,similarly a group of character can be stored in a character array.
+	Character arrays are many a time also called strings.Many language internally treat strings as character arrays,but somehow conceal this
+	fact from the programmer.Character array or strings are used by programming language to manipulate text,such as words and sentences.<br><br>
+	A strings constant in a one dimensional array of character terminated by a null('\0').<br>For example,</p>
+	<div id="shadow">
+	<pre>
+		char name[]={'H','A','E','S','L','E','R','\0'};
+	</pre>
+	</div>
+	<p>Each character in the array occupies 1 byte pf memory and the last charecter is always '\0'.What character is this? It looks like two characters,
+	but it is actually one character,with the \indicating that what follows it is something special.'\0' is called null character.Note thet '\0'
+	and '0' are not same.ASCII value of '\0' is 0,whereas ASCII value of '0' is 48.</p>
+	<h5>More about strings</h5>
+	<p>In what way are character arrays different from numeric arrays?Can element in a character array be accessed in the same way as the element of the numeric array?
+	Do i need to take any special care of '\0'?Why numeric arrays don't end with a '\0'?Declaring strings is okay,but how do i manipulate them?
+	Question galore!!Well let us settle some of these issue right away with the help of sample programs.</p>
+	<div id="shadow">
+	<pre>
+		/*Program to demonstrate printing of a string*/
+			char name[]="Klinsman";
+			int i=0;
+			
+			while(i&lt=7)
+			{
+				print("%c",name[i]);
+				i++;
+			}
+			print("\n");
+			return(0);
+		
+	</pre>
+	</div>
+	<p>And here the output is...</p>
+	<div id="shadow">
+	<pre>
+		Klinsman
+	</pre>
+	</div>
+	<h5>Pointers and Strings</h5>
+	<p>Suppose we wish to store "HELLO".We may either store it in a string or we may ask the Python compiler to store it at some location in an memory
+	and assign the address of the string in a <b>char</b> pointer.This is shown below.</p>
+	<div id="shadow">
+	<pre>
+		char str[]="Hello";
+		char *p="Hello";
+	</pre>
+	</div>
+	<p>There is subtle difference in usage of these two forms.for example we can not assign a string to another,whereas,we can assign a <b>char</b>
+	pointer to another <b>char</b> pointer.This is shown in the following programs:
+	<div id="shadow">
+	<pre>
+			char str1[]="Hello";
+			char str2[10];
+			char *s="Good Morning";
+			char *q;
+			str2=str1;  /*error*/
+			q=s;        /*works*/
+			return(0);
+		
+	</pre>
+	</div>
+	<p>Also, once a string has been designed, it cannot be initialized to another set of characters.Unlike strings,such an operation is perfectly valid with<b>char</b> pointers.</p>
+	<div id="shadow">
+	<pre>
+			char str1[]="Hello";
+			char *p="Hello";
+			str1="Bye";   /*error*/
+			p="Bye";      /*work*/
+		
+	</pre>
+	</div>
+	<br>
+	<hr width="800px" color="black">
+	<h4>STRUCTURES</h4>
+	<p>A structure in Python is a heterogeneous user defined data types,which is method for packing data of different data types.A structure is a convenient tool
+	for handling a group of logically related data items.For example,it can be used to represent a set of attributes, such as student_name,
+	roll_number and marks.The concept of structure is analogous to that of a "record" in many other languages.<br><br>
+	A structures definition creates a format that may be used to declare struct variables.The following statements declares the structure type-</p>
+	<div id="shadow">
+	<pre>
+		struct book
+		{
+			char name;
+			float price;
+			int pages;
+		};
+	</pre>
+	</div>
+	<p>This statements defines a new data types called struct book.Each variable of this type will consist of a character variable called name,
+	a float variable called price and an integer variable called pages.The general form of a structure declaration statement is</p>
+	<div id="shadow">
+	<pre>
+		struct structure name:
+		{
+			structure element1;
+			structure element2;
+			structure element3;
+		};
+	</pre>
+	</div>
+	<p>Once the new structure data type has been defined one or more variables can be declared to be of that types.<br><br>
+	Structure variables in the declaration of a structure may be declared in the following ways-<br><br>
+	In the Structure Declaration-The structure variable can be specified after the closing brace.</p>
+	<p>For example,</p>
+	<div id="shadow">
+	<pre>
+		struct book
+		{
+			char name;
+			float price;
+			int pages;
+		}b1,b2,b3;
+	</pre>
+	</div>
+	<p>book is the strucrure tag,while b1,b2 and b3 are variables of type book.
+	if other variables of the structure are not required,the tag name book can be omitted,as shown below-</p>
+	<div id="shadow">
+	<pre>
+		struct
+		{
+			char name;
+			float price;
+			int pages;
+		}b1,b2,b3;
+	</pre>
+	</div>
+	<p>Using the Structure Tag-The variable of a structure may also be declared separately by using the structure teg as follows</p>
+	<div id="shadow">
+	<pre>
+		struct book
+		{
+			char name;
+			float price;
+			int pages;
+		};
+		struct book b1,b2,b3;
+	</pre>
+	</div>
+	<h5>Initialized And Accessed-</h5>
+	<p>Structure uses a different scheme to assign values to the members of a structure.Structure elements themselves are not variables.
+	They should be linked to the structure variables in order to make them meaningful member.The link between a member and a variable is
+	established using a member operator '.' which is also called dot operator or period operator.So to refer to pages in the structure 
+	book defined above,we have to use</p>
+	<div id="shadow">
+	<pre>
+		b1.pages=250;
+	</pre>
+	</div>
+	<p>Similarly to refer to price we would use</p>
+	<div id="shadow">	
+	<pre>
+		b1.price=28.50;
+	</pre>
+	</div>
+	<h4>Array Of Structure</h4>
+	<p>Suppose we have developed a structure which store data of <i>I</i> book.Then in normal way,to store data of 100 books we are required
+	to use 100 different structures variable from b1 to b100 which is definitely not very convenient.A better way would be to use array of structure.<br><br>
+	Following programs shows how to use an array of structures-</p>
+	<div id="shadow">
+	<pre>
+		main()
+		{
+			struct book
+			{
+				char name;
+				float price;
+				int pages;
+			};
+			
+			struct book b[100];
+			int i;
+			for(i=0;i&lt99;i++)
+			{
+				print("\n Enter name,price and pages");
+				print("%c%f%d",&b[i].name,&b[i].price,&b[i].pages);
+			}
+			for(i=0;i&lt99;i++)
+				print("\n%c%f%d",b[i].name,b[i].price,b[i].pages);
+		}
+	</pre>
+	</div>
+	<p>Here statement struct book b[100];declares the array of structures.This provide space in memory for 100 structures of type struct book.<br><br>
+	The syntex which is used to reference each element of array b is similar to the syntex used for arrays,like "b[0].price" will refer to the 0<sup>th</sup> book's price.<br><br>
+	In an array of structure all elements of the array are stored in adjacent memory locations.
+	Since each elements of this array in a structure,and since all structure elements are always stored in adjacent locations we can very.</p>
+	</div>
+	<br>
+<div class="footer">
+	<h6>CODING HUB</h6>
+	<Form name="LogInForm" class="FormStyle">
+		<legend>Get latest update on coding hub</legend>
+		<label>Enter Email:</label>
+		<input type="email" name="emailID">
+		<input type="button" class="button" value="Subscribe">
+		
+	</form>
+	</div>
+</body>
+</html>

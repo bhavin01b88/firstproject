@@ -1,0 +1,82 @@
+<html>
+<head>
+	<title>Coding Hub</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="table.css">
+	
+</head>
+<body>
+<header>
+	<h1>CODING HUB</h1>
+	<h3> An exclusive collection of Python Programmes</h3>
+	</header>
+	<div class="topnav">
+		<a class="active" href="homes.html">HOME</a>
+		<a href="tutorial.html">TUTORIAL</a>
+		<a href="example.html">EXAMPLE</a>
+		<a href="librarys.html">LIBRARY FUNCTION</a>
+		
+	
+	</div>
+	<br>
+	<div id="body">
+	<h4>Python program to reverse a Number</h4>
+	<p>Example to reverse an integer entered by the user.This problem is solved using while loop in this example.</p>
+	<p>Example.Python program to reverse a number using While loop</p>
+	<h5>Source Code</h5>
+	<div id="box">
+	<pre>
+	# Python Program to Reverse a Number using While loop    
+     
+	Number = int(input("Please Enter any Number: "))    
+	Reverse = 0    
+	while(Number > 0):    
+		Reminder = Number %10    
+		Reverse = (Reverse *10) + Reminder    
+		Number = Number //10    
+     
+		print("\n Reverse of entered number is = %d" %Reverse)   
+	</pre>
+	</div>
+	<p>Output</p>
+	<div id="box">
+	<pre>
+	Enter a value   789
+	Reverse number= 987
+	</pre>
+	</div>
+	<p>This program takes an integer input from the user.Then the While loop is used until n!=0 is false.</p>
+	<p>In each iteration of while loop, the remainder when n is divided by 10 is calculated and the value of n is reduced by times.</p>
+	<hr width="800px" color="gray">
+	<br>
+	<br>
+	<div id="box">
+	<h5>Related Programs</h5>
+	<ul>
+		<li><a href="e9.html">Python program to Calculate the Sum of Number</a></li>
+		<li><a href="add.html">Python Program to Add Two Numbers</a></li>
+		<li><a href="e14.html">Python Program to Check Whether a Number is Prime or Not</a></li>
+		<li><a href="e11.html">Python Program to Display Fibonacci Sequence</a></li>
+		<li><a href="e8.html">Python program to Find Factorial of a Number</a></li>
+	</ul>
+	</div>
+	</div>
+	<br>
+	<div class="footer">
+	<h6>Coding Hub</h6>
+	<Form name="LogInForm" class="FormStyle">
+		<legend>Get latest update on coding hub</legend>
+	<label>Enter Email:</label>
+	<input type="email" name="emailID">
+	
+	
+	<input type="button" class="button" value="Subscribe">
+	
+	
+	</form>
+	</div>
+
+
+</body>
+</html>	
+	

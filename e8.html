@@ -1,0 +1,85 @@
+<html>
+<head>
+	<title>Coding Hub</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="table.css">
+	
+</head>
+<body>
+<header>
+	<h1>CODING HUB</h1>
+	<h3> An exclusive collection of Python Programmes</h3>
+	</header>
+	<div class="topnav">
+		<a class="active" href="homes.html">HOME</a>
+		<a href="tutorial.html">TUTORIAL</a>
+		<a href="example.html">EXAMPLE</a>
+		<a href="librarys.html">LIBRARY FUNCTION</a>
+		
+	
+	</div>
+	<br>
+	<div id="body">
+	<h4>Python Program to Find Factorial of a Number</h4>
+	<p>The Factorial of a positive integer  n is equal to 1*2*3...n.You will learn to calculate factorial of a number using For Loop in this example.</p>
+	<p>The Factorial of negative number doesn't exist.<br>And,the factorial of 0 is 1, 0!=1</p>
+	<p>Example.Find Factorial of a Number</p>
+	<h5>Source Code</h5>
+	<div id="box">
+	<pre>
+	# Python program to find the factorial of a number provided by the user.
+	num = 7
+	#num = int(input("Enter a number: "))
+
+	factorial = 1
+	if num < 0:
+		print("Sorry, factorial does not exist for negative numbers")
+	elif num == 0:
+		print("The factorial of 0 is 1")
+	else:
+		for i in range(1,num + 1):
+			factorial = factorial*i
+		print("The factorial of",num,"is",factorial)
+	</pre>
+	</div>
+	<p>Output</p>
+	<div id="box">
+	<pre>
+	enter a value 5
+		factorial of 5=120
+	</pre>
+	</div>
+	<p>This program takes a positive integer from the user and computer factorial using for loop.</p>
+	<p>Since the factorial of a number may be very large the type of factorial variable is declared as unsigned long int.</p>
+	<p>If the user enter negative number, the program display error message.</p>
+	<hr width="800px" color="gray">
+	<br>
+	<br>
+	<div id="box">
+	<h5>Related Programs</h5>
+	<ul>
+		<li><a href="e2.html">Python Program to Check Whether a Number is Even or Odd</a></li>
+		<li><a href="e9.html">Python program to Calculate the Sum of the Number</a></li>
+		<li><a href="e10.html">Python program to Reverse a Number</a></li>
+		<li><a href="add.html">Python Program to Add Two Numbers</a></li>
+	</ul>
+	</div>
+	</div>
+	<br>
+	<div class="footer">
+	<h6>Coding Hub</h6>
+	<Form name="LogInForm" class="FormStyle">
+		<legend>Get latest update on coding hub</legend>
+	<label>Enter Email:</label>
+	<input type="email" name="emailID">
+	
+	
+	<input type="button" class="button" value="Subscribe">
+	
+	
+	</form>
+	</div>
+
+
+</body>
+</html>	

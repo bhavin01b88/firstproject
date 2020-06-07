@@ -1,0 +1,282 @@
+<html>
+<head>
+	<title>Coding Hub</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="table.css">
+	
+
+</head>
+<body>
+<header>
+	<h1>CODING HUB</h1>
+	<h3> An exclusive collection of Python programmes</h3>
+	</header>
+	<div class="topnav">
+		<a class="active" href="homes.html">HOME</a>
+		<a href="tutorial.html">TUTORIAL</a>
+		<a href="example.html">EXAMPLE</a>
+		<a href="librarys.html">LIBRARY FUNCTION</a>
+		
+	
+	</div>
+	<br>
+	<div id="body">
+	<h4>OPERATORS</h4>
+	<p>An operator is a symbol that tells the computer to perform certain mathematical or logical manipulation.It can operate on 
+	integer,character and real numbers.Python operators can be classified into various categories based on their utility and action.They include-</p>
+	<p>1.Arithmetic Operators<br>2.Relational operators<br>3.Logical Operators<br>4.Assignment Operators<br>5.Increment or Decrement operators<br>
+	6.Conditional Operators<br>7.Bitwise Operators<p>
+	<h5>Arithmetic Operators</h5>
+	<p>The arithmetic operator perform arithmetic operation and can be classified into unary and binary arithmetic operator.
+	The arithmetic operator can operate on any built-in data type.A list of arithmetic operator and their meaning are given below-</p>
+	<div id="shadow">
+	<table>
+  <tr>
+    <th>Operator</th>
+    <th>Meaning</th>
+  </tr>
+  <tr>
+    <td>+</td>
+    <td>Addition or Unary plus</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td>Subtraction or Unary minus</td>
+  </tr>
+  <tr>
+    <td>*</td>
+    <td>Multiplication</td>
+  </tr>
+  <tr>
+    <td>/</td>
+    <td>Division</td>
+  </tr>
+  <tr>
+    <td>%</td>
+    <td>Modulo division(reminder after division)</td>
+  </tr>
+  </table>
+  </div>
+	<p><b>Integer arithmetic</b>-When two operands such as a and b are declared integers,an arithmetic operation performed on these
+	integer is called integer arithmetic.It always yields an integer value.For example,if a and b are integers,then for a=14 and 
+	b=4,the results are-</p>
+	<div id="shadow">
+	<pre>
+		a-b=10
+		a+b=18
+		a*b=56
+		a/b=3
+		a%b=2(remainder of division)
+	</pre>
+	</div>
+	<p>During integer division,if both the operands are of the same sign,the results is truncated towards zero.If one of them is negative
+	the direction of truncation is implementation dependent.That is, 6/8=0 and -6/-8=0 but -6/8 may be zero or -1</p>
+	<p><b>Floating Point/Real Arithmetic</b>-An arithmetic operation involving only real operands is called real arithmetic.A real
+	operand may assume value either in decimal or exponential notation.The floating point results are rounded off to the number of significant
+	digit specified and hence the final value is only an approximation of the correct results.The operator % cannot be used with real operands.
+	For example,if p,q and r are floats,then-</p>
+	<div id="shadow">
+	<pre>
+		p=6.0/7.0=.857143
+		q=1.0/3.0=.333333
+		r=-2.0/3.0=.666667
+	</pre>
+	</div>
+	<p><b>Mixed Mode Arithmetic</b>-In mixed mode arithmetic,if either of the operand is real,the resultant is always a real value.Foe example,</p>
+	<div id="shadow">
+	<pre>
+		15/10=1.5
+	</pre>
+	</div>
+	<h5>Relational Operators</h5>
+	<p>Relational operators are used to compares arithmetic,logical and character expression.We often compares two similar 
+	quantities and depending on their relation,take some decisions.These comparison can be done with the help of relational operators.
+	Each of these operators compares their left hand side with their right hand side.The whole expression involving the relational operator
+	then evaluates to an integers.It evalute to zero if the condition is false and 1 if it is true.</p> 
+	<div id="shadow">
+	<table>
+  <tr>
+    <th>Operator</th>
+    <th>Meaning</th>
+  </tr>
+  <tr>
+    <td><</td>
+    <td>Less than</td>
+  </tr>
+  <tr>
+    <td>></td>
+    <td>Greater than</td>
+  </tr>
+  <tr>
+    <td><=</td>
+    <td>Less than or equal to</td>
+  </tr>
+  <tr>
+    <td>>=</td>
+    <td>Greater than or equal to</td>
+  </tr>
+  <tr>
+    <td>==</td>
+    <td>Equal to</td>
+  </tr>
+  <tr>
+	<td>!=</td>
+	<td>Not equal to</td>
+  </tr>
+  </table>
+  </div>
+  <h5>Logical Operators</h5>
+  <p>A logical operator is used to compare or evaluate logical or relational expression.There are three
+	logical operators.They are-</p>  
+	<div id="shadow">
+	<table>
+  <tr>
+    <th>Operator</th>
+    <th>Meaning</th>
+  </tr>
+  <tr>
+    <td>&&</td>
+    <td>Logical AND</td>
+  </tr>
+  <tr>
+    <td>||</td>
+    <td>Logical OR</td>
+  </tr>
+  <tr>
+    <td>!</td>
+    <td>Logical NOT</td>
+  </tr>
+  </table>
+  </div>
+  <p>An expression involving && or || sometimes called logical expression or compound expression.A logical expression also yields 
+  a value of one or zero.</p>
+  <p><b>Logical AND</b>-Consider the following example</p>
+  <div id="shadow">
+  <pre>
+	a>b&&x==10
+  </pre>
+  </div>
+  <p>This expression evaluates to true(1) only if both expression,a>b and x==10,are true.</p>
+  <p><b>Logical OR</b>-Consider the following example,</p>
+  <div id="shadow">
+  <pre>
+	a&ltn||a&ltn
+  </pre>
+  </div>
+  <p>This expression is true if one of them is true,or if both of them are true</p>
+  <p><b>Logical NOT</b>-The !(NOT) operator takes a single expression and evaluates to true(1) if the expression is false(zero)
+  and evaluates to false(0) if the expression is true.In other words,it just reverses the value of the expression.For example</p>
+  <div id="shadow">
+  <pre>
+	!(x>=y)
+	</pre>
+	</div>
+	<p>In this expression evaluates to true only if the value of x is neither greater main nor equal to y.Therefore the whole expression
+	including the ! operator is the same as-x<y</p>
+	<h5>Assignment Operators</h5>
+	<p>Assignment operator(=)are used to assign the result of an expression to a variable.Python has a set of shorthand assignment operator
+	of the form,v op=exp; where v is a variable exp is an expression and op is a Python binary arithmetic operator.The operator op- is knoen
+	as a shorthand assignment operator.The assignment statement<br>vop=exp; is equivalent to<br>v=v op(exp);<br>with v evaluated only once.
+	For example<br>x+=y+1; This is same as the statement<br>x=x+(y+1); Some of the commonly used shorthand operators are-</p>
+	<div id="shadow">
+	<table>
+  <tr>
+    <th>statement with the simple operator</th>
+    <th>statement with shorthand assignment operator</th>
+  </tr>
+  <tr>
+    <td>a=a+1;</td>
+    <td>a+=1;</td>
+  </tr>
+  <tr>
+    <td>a=a-1;</td>
+    <td>a-=1;</td>
+  </tr>
+  <tr>
+    <td>a=a*(n+1);</td>
+    <td>a*=n+1;</td>
+  </tr>
+  <tr>
+    <td>a=a/(n+1)</td>
+    <td>a/=n+1;</td>
+  </tr>
+  <tr>
+    <td>a=a%b;</td>
+    <td>a%=b;</td>
+  </tr>
+  </table>
+  </div>
+	<h5>Increment or Decrement Operators</h5>
+	<p>The increment and decrement operator are very useful in Python language.The syntex of the operator is given below-</p>
+	<div id="shadow">
+	<pre>
+		++&ltvariable name&gt
+		--&ltvariable name&gt
+		&ltvariable name&gt++
+		&ltvariable name&gt--
+	</pre>
+	</div>
+	<p>The operator ++ adds 1 to the operand and -- subtracts 1 from the append.Theseoperator come in two forms-<b>prefix</b> and
+	<b>postfix</b>.For example,++ operator can be used in two ways: ++m and m++.</p> 
+	<h5>Conditional Operator(Ternary Operator)</h5>
+	<p>The conditional operator consists of two symbols-the question mark(?) and the colon(:).The syntex of ternary operator is<br>
+	exp1? exp2: exp3; where exp1,exp2 and exp3 are expressions.</p>
+	<p>The operator?: works as follow-exp1 is evaluated first.If it is nonzero(true0,then the expression 2 is evaluated and becomes 
+	the value of the expression.Here, only one of the expression (either exp2 or exp3) is evaluated.For example</p>
+	<div id="shadow">
+	<pre>
+		a=10;
+		b=15;
+		x=(a>b)?a:b    Here,x will be assigned the value of b.
+	</pre>
+	</div>
+	<h5>Bitwise Operator</h5>
+	<p>A bitwise operator operates on each bit of data.These operators are used for testing,complementing or shifting bits to the 
+	right or left.Bitwise operators may not be applied to float or double.A list of bitwise operators are given below-</p>
+	<div id="shadow">
+	<table>
+  <tr>
+    <th>Operator</th>
+    <th>Meaning</th>
+  </tr>
+  <tr>
+    <td>&</td>
+    <td>bitwise AND</td>
+  </tr>
+  <tr>
+    <td>|</td>
+    <td>bitwise OR</td>
+  </tr>
+  <tr>
+    <td>^</td>
+    <td>bitwise XOR</td>
+  </tr>
+  <tr>
+    <td><<</td>
+    <td>shift left</td>
+  </tr>
+  <tr>
+    <td>>></td>
+    <td>shift right</td>
+  </tr>
+  <tr>
+	<td>~</td>
+	<td>bitwise complement</td>
+  </table>
+  </div>
+	<br>
+	</div>
+	<br>
+	<div class="footer">
+	<h6>Coding Hub</h6>
+	<Form name="LogInForm" class="FormStyle">
+		<legend>Get latest update on coding hub</legend>
+	<label>Enter Email:</label>
+	<input type="email" name="emailID">
+	<input type="button" class="button" value="Subscribe">
+	
+	</form>
+	</div>
+</body>
+</html>
+	
